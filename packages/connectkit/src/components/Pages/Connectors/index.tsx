@@ -44,6 +44,7 @@ import { Connector } from 'wagmi';
 import useLocales from '../../../hooks/useLocales';
 import { useLastConnector } from '../../../hooks/useLastConnector';
 import { useWalletConnectUri } from '../../../hooks/connectors/useWalletConnectUri';
+import MagicConnectorButton from './MagicConnectorButton';
 
 const Wallets: React.FC = () => {
   const context = useContext();
@@ -235,7 +236,7 @@ const Wallets: React.FC = () => {
                 }
               }
               return (
-                <ConnectorButton
+                <MagicConnectorButton
                   key={connector.id}
                   disabled={context.route !== routes.CONNECTORS}
                   onClick={() => {
@@ -253,7 +254,7 @@ const Wallets: React.FC = () => {
                         </ConnectorRecentlyUsed>
                       )}
                   </ConnectorLabel>
-                </ConnectorButton>
+                </MagicConnectorButton>
               );
             })}
           </ConnectorsContainer>

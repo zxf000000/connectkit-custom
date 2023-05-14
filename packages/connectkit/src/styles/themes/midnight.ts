@@ -40,7 +40,7 @@ export default {
   '--ck-body-color': '#ffffff',
   '--ck-body-color-muted': '#8B8F97',
   '--ck-body-color-muted-hover': '#ffffff',
-  '--ck-body-background': '#1F2023',
+  '--ck-body-background': '#1b1c1f',
   '--ck-body-background-transparent': 'rgba(31, 32, 35, 0)',
   '--ck-body-background-secondary': '#313235',
   '--ck-body-background-secondary-hover-background': '#e0e4eb',

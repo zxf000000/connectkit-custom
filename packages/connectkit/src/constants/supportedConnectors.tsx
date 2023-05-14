@@ -7,7 +7,7 @@
  */
 
 import { ReactNode } from 'react';
-import Logos from './../assets/logos';
+import Logos, { NearLogo, Unstoppable } from './../assets/logos';
 import { isCoinbaseWallet, isMetaMask } from './../utils';
 
 let supportedConnectors: {
@@ -69,6 +69,105 @@ if (typeof window != 'undefined') {
       scannable: false,
       extensionIsInstalled: () => {
         return Boolean(ethereum);
+      },
+    },
+    {
+      id: 'ud',
+      name: 'Unstopable Domains',
+      shortName: 'ud',
+      logos: {
+        default: <Logos.UdConnect />,
+        mobile: (
+          <div
+            style={{
+              padding: 5,
+              background: 'var(--ck-body-background-tertiary)',
+              borderRadius: '27%',
+              boxShadow: 'inset 0 0 0 1px rgba(0, 0, 0, 0.02)',
+            }}
+          >
+            <div
+              style={{
+                transform: 'scale(0.75)',
+                position: 'relative',
+                width: '100%',
+              }}
+            >
+              <Logos.UdConnect />
+            </div>
+          </div>
+        ),
+        transparent: <Logos.UdConnect />,
+      },
+      scannable: false,
+      extensionIsInstalled: () => {
+        return Boolean(ethereum);
+      },
+    },
+    {
+      id: 'befi',
+      name: 'Befi wallet',
+      shortName: 'befi',
+      logos: {
+        default: <Logos.BefiWallet />,
+        mobile: (
+          <div
+            style={{
+              padding: 5,
+              background: 'var(--ck-body-background-tertiary)',
+              borderRadius: '27%',
+              boxShadow: 'inset 0 0 0 1px rgba(0, 0, 0, 0.02)',
+            }}
+          >
+            <div
+              style={{
+                transform: 'scale(0.75)',
+                position: 'relative',
+                width: '100%',
+              }}
+            >
+              <Logos.BefiWallet />
+            </div>
+          </div>
+        ),
+        transparent: <Logos.BefiWallet />,
+      },
+      scannable: false,
+      extensionIsInstalled: () => {
+        return Boolean(ethereum);
+      },
+    },
+    {
+      id: 'near',
+      name: 'Near wallet',
+      shortName: 'near',
+      logos: {
+        default: <Logos.NearLogo />,
+        mobile: (
+          <div
+            style={{
+              padding: 5,
+              background: 'var(--ck-body-background-tertiary)',
+              borderRadius: '27%',
+              boxShadow: 'inset 0 0 0 1px rgba(0, 0, 0, 0.02)',
+            }}
+          >
+            <div
+              style={{
+                transform: 'scale(0.75)',
+                position: 'relative',
+                width: '100%',
+              }}
+            >
+              <Logos.NearLogo />
+            </div>
+          </div>
+        ),
+        transparent: <Logos.NearLogo />,
+      },
+      scannable: false,
+      extensionIsInstalled: () => {
+        return true;
       },
     },
     {
