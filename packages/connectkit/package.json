@@ -1,13 +1,13 @@
 {
-  "name": "connectkit",
-  "version": "1.2.3",
+  "name": "@mkk/connectkit",
+  "version": "1.2.4",
   "author": "Family",
   "homepage": "https://docs.family.co/connectkit",
   "license": "BSD-2-Clause license",
   "description": "Connecting a wallet, made simple.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/family/connectkit.git",
+    "url": "git+https://github.com/zxf000000/connectkit-custom.git",
     "directory": "packages/connectkit"
   },
   "type": "module",
